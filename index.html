@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <title>w.THr|weather</title>
+</head>
+
+<body>
+    <!--top-->
+    <header class="topInfoNav flex flex-ai-c flex-jc-sb">
+        <div>
+            12:00 pm, Monday July 5<br>
+            <div id="cityName">Columbia, SC</div>
+        </div>
+        <div class="topInfoNav__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <container id="colorObject">
+        <img src="/images/pngegg.png" alt="">
+    </container>
+
+    <container class="midBlock flex flex-jc-sb">
+        <section id="temperature">
+            75 <span>&#8457;</span>
+        </section>
+
+        <section class="high-low flex flex-jc-sb flex-slot-column">
+            <div>&uarr;90 F</div>
+            <div> &darr;75 F</div>
+        </section>
+
+    </container>
+
+    <span id="divideSpan"></span>
+
+    <div id="description">Clear and sunny</div>
+
+    <!--bottom-->
+    <container class="forecast flex ">
+
+        <section><div>80 &#8457</div> <img src="images/weather-icons-master/svg/wi-day-sunny.svg"><div class="dayWeek">Mon</div></section>
+        <section><div>80 &#8457</div> <img src="images/weather-icons-master/svg/wi-day-sunny.svg"><div class="dayWeek">Tues</div></section>
+        <section><div>80 &#8457</div> <img src="images/weather-icons-master/svg/wi-day-windy.svg"><div class="dayWeek">Wed</div></section>
+        <section><div>80 &#8457</div> <img src="images/weather-icons-master/svg/wi-day-windy.svg"><div class="dayWeek">Thurs</div></section>
+        <section><div>80 &#8457</div> <img src="images/weather-icons-master/svg/wi-rain-wind.svg"><div class="dayWeek">Fri</div></section>
+    </container>
+</body>
+
+</html>

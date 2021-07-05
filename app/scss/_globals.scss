@@ -1,0 +1,28 @@
+
+html{
+    font-family: $mainFont;
+    font-weight: 100;
+    padding:0px 25px;
+    
+}
+
+
+
+.flex{
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+      }
+      
+      &-jc-c {
+        justify-content: center;
+      }
+      
+      &-ai-c {
+        align-items: center;
+      }
+      &-slot-column{
+        flex-direction: column;
+      }
+}

@@ -1,0 +1,37 @@
+.topInfoNav{
+    padding:68px 0px;
+    font-size: 15px;
+    font-weight: 300;
+    color:white;
+    z-index: -1;
+
+    &__menu{
+        
+        >span{
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: white;
+        opacity: 1;
+        left: 0;
+
+            &:not(:last-child){
+                margin-bottom:8px;
+            }
+
+        }
+    }
+}
+#cityName{
+    font-weight: bold;
+}
+
+#colorObject{
+    position: absolute;
+    top: -160px;
+    left:-110px;
+    z-index: -1;
+    >img{
+        width:1300px
+    }
+}

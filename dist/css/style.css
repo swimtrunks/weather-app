@@ -1,0 +1,154 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  padding: 0px 25px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-slot-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.topInfoNav {
+  padding: 68px 0px;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  z-index: -1;
+}
+
+.topInfoNav__menu > span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: white;
+  opacity: 1;
+  left: 0;
+}
+
+.topInfoNav__menu > span:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+#cityName {
+  font-weight: bold;
+}
+
+#colorObject {
+  position: absolute;
+  top: -160px;
+  left: -110px;
+  z-index: -1;
+}
+
+#colorObject > img {
+  width: 1300px;
+}
+
+#colorObject:after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(255, 255, 255, 0.4)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.4) 10%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.midBlock {
+  padding-top: 350px;
+  margin-bottom: -78px;
+}
+
+#temperature {
+  font-size: 85px;
+  font-weight: bold;
+  letter-spacing: -5px;
+}
+
+#temperature > span {
+  font-size: 40px;
+  font-weight: 100;
+  margin-left: -10px;
+}
+
+#divideSpan {
+  display: block;
+  margin-top: 80px;
+  width: 300px;
+  height: 1px;
+  background-color: black;
+  border: solid 2px;
+}
+
+.forecast {
+  font-size: 12px;
+  padding-top: 30px;
+}
+
+.forecast > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forecast > section > div:not(:last-child) {
+  font-weight: bold;
+}
+
+.forecast > section:not(:last-child) {
+  padding-right: 35px;
+}
+
+.forecast > section > img {
+  padding: 3px 0px;
+  width: 90%;
+  height: auto;
+}
+
+#description {
+  padding-top: 10px;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: -0.25px;
+}
+
+.high-low {
+  padding: 15px 0px;
+}
+/*# sourceMappingURL=style.css.map */
