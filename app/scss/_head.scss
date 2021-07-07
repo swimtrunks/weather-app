@@ -22,16 +22,26 @@
         }
     }
 }
-#cityName{
+.cityInquiry{
     font-weight: bold;
+    cursor: pointer;
 }
 
 #colorObject{
     position: absolute;
+    
     top: -160px;
     left:-110px;
     z-index: -1;
+    overflow:hidden;
     >img{
-        width:1300px
+        width:1300px;
+        
     }
+}
+#dayTime{
+    display: inline;
+}
+#dayDate{
+    display: inline;
 }
