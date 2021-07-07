@@ -13,9 +13,9 @@
 
     <link rel="stylesheet" href="dist/css/style.css">
 
-    <title>w.THr|weather</title>
+    <title>smplwthr|weather app</title>
 </head>
-
+<div id = "page-wrap">
 <body>
     <!--top-->
     <header class="topInfoNav flex flex-ai-c flex-jc-sb">
@@ -34,57 +34,54 @@
     </header>
 
     <container id="colorObject">
-        <img src="/images/pngegg.png" alt="">
+        <img id="blue" src="/images/neutral.png" alt="">
     </container>
 
     <container class="midBlock flex flex-jc-sb">
         <section id="temperature">
-            <div id="mainTemp" style="display:inline">75</div> <span>&#8457;</span>
+            <div id="mainTemp" style="display:inline">00</div> <span>&#8457;</span>
         </section>
 
         <section class="high-low flex flex-jc-sb flex-slot-column">
-            <div>&uarr;90 F</div>
-            <div> &darr;75 F</div>
+            <div>&uarr;<span id="hiTemp" style="color:red">00</span> &#8457;</div>
+            <div>&darr;<span id="lowTemp" style="color:blue">00</span> &#8457;</div>
         </section>
 
     </container>
 
     <span id="divideSpan"></span>
 
-    <div id="description">Clear and sunny</div>
+    <div id="description"></div>
 
     <!--bottom-->
-    <container class="forecast flex ">
+    <container class="forecast flex flex-jc-sb">
 
         <section>
-            <div><span class='dayTemp'>80</span> &#8457</div> <img
-                src="images/weather-icons-master/svg/wi-day-sunny.svg">
-            <div class="dayWeek">Mon</div>
+            <div class='dayTemp'></div>
         </section>
         <section>
-            <div><span class='dayTemp'>81</span> &#8457</div> <img
-                src="images/weather-icons-master/svg/wi-day-sunny.svg">
-            <div class="dayWeek">Tues</div>
+            <div class='dayTemp'></div>
         </section>
         <section>
-            <div><span class='dayTemp'>82</span> &#8457</div> <img
-                src="images/weather-icons-master/svg/wi-day-windy.svg">
-            <div class="dayWeek">Wed</div>
+            <div class='dayTemp'>click at top:<span id="defaultText"> <br>"Find My Location"</span></div>
         </section>
         <section>
-            <div><span class='dayTemp'>83</span> &#8457</div> <img
-                src="images/weather-icons-master/svg/wi-day-windy.svg">
-            <div class="dayWeek">Thurs</div>
+            <div class='dayTemp'></div>
         </section>
         <section>
-            <div><span class='dayTemp'>84</span> &#8457</div> <img
-                src="images/weather-icons-master/svg/wi-rain-wind.svg">
-            <div class="dayWeek">Fri</div>
+            <div class='dayTemp'></div>
         </section>
     </container>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="/app/js/script.js"></script>
 
 </body>
-
+</div>
 </html>
+
+
+
+<!-- day forecast
+<div><span class='dayTemp'>00</span> &#8457</div> <img
+                    src="images/weather-icons-master/svg/wi-day-sunny.svg">
+                <div class="dayWeek">Mon</div> -->
