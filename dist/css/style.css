@@ -6,7 +6,6 @@ html {
 
 body {
   position: relative;
-  overflow: hidden;
 }
 
 .flex {
@@ -62,6 +61,7 @@ body {
 }
 
 .cityInquiry {
+  margin-top: 5px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -84,6 +84,10 @@ body {
 
 #dayDate {
   display: inline;
+}
+
+.dayTemp {
+  font-weight: 300;
 }
 
 #colorObject:after {
@@ -150,9 +154,13 @@ body {
   padding-right: 35px;
 }
 
-.forecast > section > img {
+.dayTemp {
+  text-align: center;
+}
+
+.dayTemp > img {
   padding: 3px 0px;
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
@@ -165,5 +173,10 @@ body {
 
 .high-low {
   padding: 15px 0px;
+}
+
+#defaultText {
+  font-size: 16px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
