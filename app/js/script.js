@@ -7,17 +7,11 @@ let monthName = currentDate.toString().split(' ')[1];
 let yearName = currentDate.toString().split(' ')[3];
 let setTime = currentDate.toString().split(' ')[4].split(':')
 let pageTime = `${setTime[0]}:${setTime[1]}`;
-console.log();
 
-
-//set time
-$(document).ready(function () {
-    $("#dayTime").text(`${pageTime}`);
-});
-
-//set date
+//set date & time
 $(document).ready(function () {
     $("#dayDate").text(`${dayName}, ${monthName} ${yearName}`);
+    $("#dayTime").text(`${pageTime}`);
 });
 
 
@@ -71,16 +65,48 @@ function getWeather(query) {
 
             console.log(data);
             let currentTemp = Math.round(data.current.temp);
+            let highest = Math.round(data.daily[0].temp.max);
+            let lowest = Math.round(data.daily[0].temp.min);
+            let statement = data.current.weather[0].description;
+            let descArr = [...statement]
+
+
 
             $(document).ready(function () {
                 $('#mainTemp').text(`${currentTemp}`);
-            });
+                $('#hiTemp').text(`${highest} `);
+                $('#lowTemp').text(`${lowest}`);
+                $('#description').text(`${statement}`);
 
-            $('.dayTemp').each(function (index, temp) {
-                temp = Math.round(data.daily[index].temp.day);
-                
-                
-            })
+
+                //background image conditional
+                if (descArr.includes('rain')) {
+                    $("#blue").fadeOut(function () {
+                        $(this).attr("src", "/images/rain.png").fadeIn();
+                    });
+                } else if (currentTemp >= 85 && currentTemp < 110) {
+                    $("#blue").fadeOut(function () {
+                        $(this).attr("src", "/images/hot.png").fadeIn();
+                    });
+                } else if (currentTemp > 65 && currentTemp < 85) {
+                    $("#blue").fadeOut(function () {
+                        $(this).attr("src", "/images/pngegg.png").fadeIn();
+                    });
+                }
+
+                $('.dayTemp').each(function (i, obj) {
+
+                    let dailyTemp = Math.round(data.daily[i].temp.day);
+
+                    $(this).html(`
+                    <div><span class='dayTemp'>${dailyTemp}</span> &#8457</div> <img
+                    id = "wIcon" src="images/weather-icons-master/svg/wi-day-sunny.svg">
+                    <div class="dayWeek">Mon</div>
+                    `)
+                })
+
+
+            });
 
 
 
