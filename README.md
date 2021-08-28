@@ -10,9 +10,10 @@ I also planned on adding a search feature where the user can search for a locati
 
 <h3>Design:</h3>
 
-This was really just meant to be a quick project so the styling isnt as responsive as it could be but mostly I worked in the mobile first design methodology. 
+This was really just meant to be a quick project so the styling isnt as responsive as it could be but mostly I worked in the mobile first design methodology. <br /> <br />
 
-![Design](https:github.com/swimtrunks/weather-app/images/wthrappdesign.png)
+<img src="https://user-images.githubusercontent.com/25188844/131223122-894aea64-2891-4c4f-89f5-3d79cb628af8.png" width="750">
+
 <h3>Technologies:</h3>
 
 - HTML
